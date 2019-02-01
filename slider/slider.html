@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<style>
+		/*	
+			Подсказка
+
+			На слайдере в один момент времени должно быть видно только одну картинку
+			Чтобы этого добиться, нужно для контейнера слайдов задать ширину, не меньше, 
+			чем общая суммарная ширина всех слайдов. Обычно это либо рассчитывают с помощью JavaScript,
+			либо просто задают очень большую ширину.
+
+			В нашем примере вы можете для .slider__inner задать ширину в 100 000px с запасом :)
+
+			А для  отдельных слайдов (.slider__item) нужно задать ширину, равную ширине слайдера. Само собой, 
+			их также нужно выстроить в ряд. Для этого можно использовать float, inline-block или flex. Используйте, что знаете :)
+
+		*/
+	</style>
+</head>
+<body>
+	<div class="slider">
+		<ul class="slider__inner">
+			<li class="slider__item"><img src="1.jpg" alt=""></li>
+			<li class="slider__item"><img src="2.jpg" alt=""></li>
+			<li class="slider__item"><img src="3.jpg" alt=""></li>
+		</ul>
+		<div class="slider__navigation">
+			<a href="#" class="slider__dot"><i class="far fa-circle"></i></a>
+			<a href="#" class="slider__dot"><i class="far fa-circle"></i></a>
+			<a href="#" class="slider__dot"><i class="far fa-circle"></i></a>
+		</div>
+		<button class="slider__prev"><i class="fas fa-arrow-left"></i></button>
+		<button class="slider__next"><i class="fas fa-arrow-right"></i></button>
+	</div>
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="slider.js"></script>
+</body>
+</html>
